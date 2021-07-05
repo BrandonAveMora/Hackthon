@@ -1,9 +1,10 @@
 
 from django.contrib import admin
 from django.urls import path
-from Backend.Backend.conf.urls import products, users
+from Backend.conf.urls import products, users
 
-urlpatterns = [
+urlpatterns_init = [
     path('admin/', admin.site.urls),
 ]
-urlpatterns += users.urlpatterns + products.urlpatterns 
+
+urlpatterns = urlpatterns_init + products.urlpatterns + users.urlpatterns

@@ -1,5 +1,6 @@
+from Backend.Backend.conf.products import INSTALLED_APPS
 from pathlib import Path
-from Backend.Backend.conf import products, users
+from Backend.conf import products, users
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -17,6 +18,8 @@ INSTALLED_APPS_INIT = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 
@@ -30,8 +33,8 @@ MIDDLEWARE_INIT = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-INSTALLED_APPS = INSTALLED_APPS_INIT + users.INSTALLED_APPS + products.INSTALLED_APPS
-MIDDLEWARE = MIDDLEWARE_INIT + users.MIDDLEWARE + products.MIDDLEWARE
+INSTALLED_APPS = INSTALLED_APPS_INIT + products.INSTALLED_APPS + users.INSTALLED_APPS
+MIDDLEWARE = MIDDLEWARE_INIT + products.INSTALLED_APPS + users.INSTALLED_APPS
 
 ROOT_URLCONF = 'Backend.urls'
 
