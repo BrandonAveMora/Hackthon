@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import LoginComponent from './LoginComponent'
 
-function HolaMundo() {
+function App() {
   return(
     <div>
-      <h1>Hola Mundo</h1>
+      <LoginComponent/>
     </div>
   )
 }
 
-ReactDOM.render(<HolaMundo/>, document.getElementById('root'))
+ReactDOM.render(<App/>, document.getElementById('root'))
