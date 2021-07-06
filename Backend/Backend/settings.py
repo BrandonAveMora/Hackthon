@@ -1,4 +1,3 @@
-from Backend.Backend.conf.products import INSTALLED_APPS
 from pathlib import Path
 from Backend.conf import products, users
 
@@ -20,6 +19,7 @@ INSTALLED_APPS_INIT = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'corsheaders',
 ]
 
 
@@ -34,7 +34,7 @@ MIDDLEWARE_INIT = [
 ]
 
 INSTALLED_APPS = INSTALLED_APPS_INIT + products.INSTALLED_APPS + users.INSTALLED_APPS
-MIDDLEWARE = MIDDLEWARE_INIT + products.INSTALLED_APPS + users.INSTALLED_APPS
+MIDDLEWARE = MIDDLEWARE_INIT + products.MIDDLEWARE + users.MIDDLEWARE
 
 ROOT_URLCONF = 'Backend.urls'
 
@@ -60,7 +60,11 @@ WSGI_APPLICATION = 'Backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': BASE_DIR / 'db.psql',
+        'NAME': 'dbtest',
+        'USER': 'postgres',
+        'PASSWORD': 'wwytk2mu',
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
 
