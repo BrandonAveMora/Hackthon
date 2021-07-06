@@ -1,4 +1,3 @@
-from Backend.Backend.conf.products import INSTALLED_APPS
 from pathlib import Path
 from Backend.conf import products, users
 
@@ -9,7 +8,7 @@ SECRET_KEY = 'django-insecure-f-sz&b&+*$2v!1rkz+an%0cx_xr%93@1uvt@86qt(at6$h^c4q
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS_INIT = [
     'django.contrib.admin',
@@ -20,6 +19,7 @@ INSTALLED_APPS_INIT = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+
 ]
 
 
@@ -34,7 +34,8 @@ MIDDLEWARE_INIT = [
 ]
 
 INSTALLED_APPS = INSTALLED_APPS_INIT + products.INSTALLED_APPS + users.INSTALLED_APPS
-MIDDLEWARE = MIDDLEWARE_INIT + products.INSTALLED_APPS + users.INSTALLED_APPS
+
+MIDDLEWARE = MIDDLEWARE_INIT + products.MIDDLEWARE + users.MIDDLEWARE 
 
 ROOT_URLCONF = 'Backend.urls'
 
@@ -60,7 +61,11 @@ WSGI_APPLICATION = 'Backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': BASE_DIR / 'db.psql',
+        'NAME':  'hack',
+        'USER': 'postgres',
+        'PASSWORD': 'z4me5cwh',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -81,7 +86,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
@@ -92,5 +97,6 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'apiusers.User'
