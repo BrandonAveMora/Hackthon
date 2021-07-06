@@ -19,7 +19,6 @@ INSTALLED_APPS_INIT = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-
 ]
 
 
@@ -41,7 +40,7 @@ ROOT_URLCONF = 'Backend.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'BACKEND': 'django.db.backends.postgresql_psycopg2',
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
