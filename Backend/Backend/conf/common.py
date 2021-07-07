@@ -1,14 +1,10 @@
 from pathlib import Path
-from Backend.conf import products, users
+from decouple import config
+from Backend.conf.config import products, users
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-SECRET_KEY = 'django-insecure-f-sz&b&+*$2v!1rkz+an%0cx_xr%93@1uvt@86qt(at6$h^c4q'
-
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
+SECRET_KEY = config('SECRET_KEY')
 
 INSTALLED_APPS_INIT = [
     'django.contrib.admin',
@@ -55,43 +51,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Backend.wsgi.application'
-
-if DEBUG == True:
-    BD_USER = "Rafa"
-
-    if BD_USER == "Jalomo":
-        DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                'NAME': 'hack2',
-                'USER': 'postgres',
-                'PASSWORD': 'z4me5cwh',
-                'HOST': 'localhost',
-                'PORT': 5432,
-            }
-        }
-    elif BD_USER == "Rafa":
-        DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                'NAME': 'hack2',
-                'USER': 'postgres',
-                'PASSWORD': 'wwytk2mu',
-                'HOST': 'localhost',
-                'PORT': 5432,
-            }
-        }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'obio',
-            'USER': 'postgres',
-            'PASSWORD': 'obiopswd',
-            'HOST': 'localhost',
-            'PORT': 5432,
-        }
-    }
 
 
 
