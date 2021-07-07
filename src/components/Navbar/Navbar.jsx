@@ -9,7 +9,7 @@ export default class NavbarComponent extends Component{
         return(
             <>
             <div class="container">
-            <Nav className="justify-content-center " justify = "true" activeKey="/">
+            <Nav className="justify-content-center ms-2 mt-3 p-3" justify = "true" activeKey="/">
                 <Nav.Item>
                     <Link className = "" to = "/store">
                         <img src="https://i.ibb.co/jZCtTgd/ofertas-icon.png" alt="ofertas-icon" border="0"/>

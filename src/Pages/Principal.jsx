@@ -5,7 +5,7 @@ import bannerDos from '../img/Banner2.png';
 import Principal from './Principal.css'
 const Contador = () => {
     
-
+    let obio = 'OBIO';
 
     return (
         <Fragment>
@@ -13,12 +13,15 @@ const Contador = () => {
             <div style={{ height: 600 }}>
                 <div class="hero-image">
                     <img src="" alt=''/>
-                    <div class="ms-2 mt-3 p-5">
-                        <h1>ES OBIO Y ES JUSTO</h1>
-                        <h1>ES OBIO RESPETAR EL ENTORNO</h1>
-                        <h1>ES OBIO SER NATURAL</h1>
-                        <h1>ES OBIO Y ES ORGÁNICO</h1>
+                    <div class="mt-5 p-5">
+                        <pre>
+                        <h1>ES {obio} Y ES JUSTO</h1>
+                        <h1>ES {obio} RESPETAR EL ENTORNO</h1>
+                        <h1>ES {obio} SER NATURAL</h1>
+                        <h1>ES {obio} Y ES ORGÁNICO</h1>
+                        </pre>
                     </div>
+                    
                 </div>
                 
             </div>
