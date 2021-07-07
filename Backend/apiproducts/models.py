@@ -30,6 +30,8 @@ class Product(models.Model):
     # Contenido
     content = models.CharField(max_length=15)
 
+    #Tipo de producto
+    type = models.CharField(max_length=255, null=False, blank=False)
     
 
     def __str__(self):

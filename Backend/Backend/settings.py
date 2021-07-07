@@ -57,7 +57,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Backend.wsgi.application'
 
 if DEBUG == True:
-    BD_USER = "Jalomo"
+    BD_USER = "Rafa"
 
     if BD_USER == "Jalomo":
         DATABASES = {
