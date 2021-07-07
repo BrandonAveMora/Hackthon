@@ -10,24 +10,9 @@ const Contador = () => {
     return (
         <Fragment>
           
-<<<<<<< HEAD
             <div class="d-flex justify-content-center mt-4 ">
                 <div>
                     <img src={banner} alt='Obio'/>
-=======
-            <div style={{ height: 600 }}>
-                <div class="hero-image">
-                    <img src="" alt=''/>
-                    <div class="mt-5 p-5">
-                        <pre>
-                        <h1>ES {obio} Y ES JUSTO</h1>
-                        <h1>ES {obio} RESPETAR EL ENTORNO</h1>
-                        <h1>ES {obio} SER NATURAL</h1>
-                        <h1>ES {obio} Y ES ORGÁNICO</h1>
-                        </pre>
-                    </div>
-                    
->>>>>>> d587b4c86e1ea1319eae3a560b6d0e3f2d4e091c
                 </div>
                 
             </div>
