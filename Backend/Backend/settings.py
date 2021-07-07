@@ -40,7 +40,7 @@ ROOT_URLCONF = 'Backend.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.db.backends.postgresql_psycopg2',
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
