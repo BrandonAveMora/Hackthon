@@ -1,16 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
+
+.nav {
+    margin-top:8px;
+}
 .nav-item {
     position: relative;
     align-items: center;
     align-content: center;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #757B63;
+    transition: 0.4s;
 }
 
-.nav-item > a {
-    width: 100%;
+.nav-item > div > div {
+    position: relative;
+    font-family: 'Baloo 2', cursive;
+    
 }
-.nav-item > a > img {
-    width: 35px;
+.nav-item:hover {
+    text-decoration: none;
+    color: #B5BBA3;
+}
+.nav-item > div > div > img {
+    position: relative;
+    width: 26px;
+    margin-right: 7px;
 }
 
-.nav-logo > a > img {
-    width: 110px;
+.nav-logo > div > div > img {
+    position: relative;
+    width: 90px;
 }
