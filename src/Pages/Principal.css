@@ -1,6 +1,6 @@
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.062), rgba(0, 0, 0, 0.062)), url("../img/banner-obio 1.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.062), rgba(0, 0, 0, 0.062)), url("../img/Banner2.png");
     height: 100%;
     
     background-position: center;
@@ -8,6 +8,14 @@
     position: relative;
   }
 
+  .hero-image-dos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.062), rgba(0, 0, 0, 0.062)), url("../img/banner-obio 1.png");
+    height: 100%;
+    
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
   
 .hero-text {
     text-align: center;
