@@ -91,3 +91,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'apiusers.User'
 
 django_heroku.settings(locals())
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
