@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 from decouple import config
 from Backend.conf.config import products, users
-import django_heroku
+#import django_heroku
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -90,7 +90,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'apiusers.User'
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
 
 # STATICFILES_DIRS = (
 #     os.path.join(BASE_DIR, 'static'),
