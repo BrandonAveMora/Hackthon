@@ -25,7 +25,7 @@ const Contador = () => {
                     <div>
                         <h3>Café</h3>
                         <h4>$140</h4>
-                        <button>Agregar al carrito</button>
+                        <button >Agregar al carrito</button>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@ const Contador = () => {
                         <button>Agregar al carrito</button>
                     </div>
                 </div>
-        
+
             </div>
  
             <div style={{ height: 600 }}>
