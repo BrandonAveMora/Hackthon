@@ -50,28 +50,7 @@ const Contador = () => {
                         <button>Agregar al carrito</button>
                     </div>
                 </div>
-
-                <div>  {/*  4   */}
-                    <div class="content-center">
-                        <img src="https://sc04.alicdn.com/kf/Hfe6f8e4615ae4f0e88817e8656da500fX.jpg" alt="café"></img>
-                    </div>
-                    <div>
-                        <h3>Café</h3>
-                        <h4>$140</h4>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </div>
-
-                <div>  {/*  5   */}
-                    <div class="content-center">
-                        <img src="https://sc04.alicdn.com/kf/Hfe6f8e4615ae4f0e88817e8656da500fX.jpg" alt="café"></img>
-                    </div>
-                    <div>
-                        <h3>Café</h3>
-                        <h4>$140</h4>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </div>
+        
             </div>
  
             <div style={{ height: 600 }}>
