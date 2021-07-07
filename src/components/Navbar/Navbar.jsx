@@ -8,6 +8,7 @@ export default class NavbarComponent extends Component{
     render(){
         return(
             <>
+            <div class="container">
             <Nav className="justify-content-center " justify = "true" activeKey="/">
                 <Nav.Item>
                     <Link className = "" to = "/store">
@@ -57,6 +58,7 @@ export default class NavbarComponent extends Component{
                     </Link>
                 </Nav.Item>
             </Nav>
+            </div>
             </>
         )
     }
