@@ -58,6 +58,7 @@ export default class NavbarComponent extends Component{
                     </Link>
                 </Nav.Item>
             </Nav>
+            </div>
             </>
         )
     }
